@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+:root{
+    --prt:#faa5;
+}
+
+.btns{
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #24243e;
+    color: #faa;
+    font-weight: bolder;
+    z-index: 200;
+    position: relative;
+}
+.profilebox{
+    position: relative;
+    z-index: 150;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 22px;
+}
+nav .elemtFrt{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+.elemtFrt li a{
+    text-decoration: none;
+    color:#faa;
+}
+.elemtScnd li span{
+    background-color: #302b63;
+    padding: 10px;
+    box-shadow: inset 0px 4px 7px 1px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .elemtScnd{
+        width: 100%;
+        justify-content: end;
+        display: flex;
+    }
+    .elemtScnd li span{
+        font-size: 14px;
+    }
+    .menuToggle{
+        display: block;
+        font-size: 20px;
+    }
+    .elemtFrt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        margin: 0;
+        background: #334;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%!important;
+    
+        overflow-y: auto;
+        height: calc(100% - 60px);
+    
+        left: 100%;
+        transition: left 0.3s;
+    }
+}
+.blockft{
+    
+    display: block;
+    left: 0;
+}

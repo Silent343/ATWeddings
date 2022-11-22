@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body{
+    width: 100vw;
     font-family: sans-serif;
     background: #0f0c29; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Chrome 10-25, Safari 5.1-6 */
@@ -48,9 +49,19 @@ nav .elemtFrt{
     justify-content: space-around;
 }
 .elemtFrt li a{
+    line-height: 20px;
     text-decoration: none;
     color:#faa;
+    text-transform: uppercase;
 }
+
+.elemtFrt li:hover{
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4356;
+}
+
 .elemtScnd li span{
     background-color: #302b63;
     padding: 10px;
@@ -58,6 +69,11 @@ nav .elemtFrt{
     text-transform: uppercase;
     border-radius: 30px;
 }
+
+
+
+
+
   
 
 /*background-color: #faa5;*/
@@ -89,18 +105,46 @@ nav .elemtFrt{
     z-index: 50;
     bottom: 0;
 }
+.imgInv{
+    filter: blur(15px);
+    z-index: -100;
+    position: absolu;
+}
+.imgIdx{
+    position: relative;
+    z-index: 50;
+}
+
+.floatLogo{
+    position: absolute;
+    margin: 10px 20px 0 0;
+    float: right;
+    width: 20%!important;
+    background-color: #fffd;
+    border-radius: 100%;
+    height: 30%!important;
+}
+
+.prfCtn{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
 
 .imgProf img{
-    width: 100%;
+    width: 50%;
     height: 110%;
-    opacity: 50%;
+    opacity: 60%;
 }
 
 .imgProf{
     display: flex;
     justify-content: end;
     width: 70%;
-    height: 85%;
+    height: 88%;
     right: 0;
 }
 
@@ -112,6 +156,14 @@ nav .elemtFrt{
     width: 25%;
     height: 70%;
 }
+
+
+
+
+
+
+
+
 main ul{
     list-style: none;
     font-size: 40px;
@@ -166,6 +218,13 @@ main ul{
     }
   }
 
+
+
+
+
+
+
+
 .txt-inf{
     font-size: 100%;
     margin-top: 25px;
@@ -193,9 +252,6 @@ main ul{
     text-transform: uppercase;
     color: #fff;
 }
-.blockft{
-    display: block;
-}
 
 
 
@@ -205,6 +261,12 @@ main ul{
         margin: 40px 0;
     }
 }
+
+
+
+
+
+
 @keyframes txtani{
     0%{
         opacity: 0%;
@@ -218,6 +280,11 @@ main ul{
 }
 
 
+
+
+
+
+
 @keyframes aniTxt2{
     0%{
         left: -100px;
@@ -227,12 +294,21 @@ main ul{
     }
 }
 
+footer{
+    display: none;
+}
+
+
+
+
+
+
 @media (max-width: 768px){
-    .elemtFrt li{
-        display: none;
-    }
+    
     .elemtScnd{
         width: 100%;
+        justify-content: end;
+        display: flex;
     }
     .elemtScnd li span{
         font-size: 14px;
@@ -268,11 +344,7 @@ main ul{
         display: none;
     }
     .txt-Cntt{
-        margin-top: 753px;
-        font-size: 12px;
-        width: 500%;
-        border-radius: 20px;
-        padding: 15px;
+        display: none;
     }
     .txt-inf2{
         color: #fff;
@@ -286,16 +358,63 @@ main ul{
         font-size: 10px;
         font-weight: bolder;
     }
-    .wave2{
-        margin-bottom: 0px;
-    }
-    .txt-Cntt{
-        background: url("/mask/pngegg\ \(2\).png");
-    }
     header{
         position: fixed;
     }
     .profilebox{
         margin-top: 62px;
     }
+    .elemtFrt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        margin: 0;
+        background: #334;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%!important;
+
+        overflow-y: auto;
+        height: calc(100% - 60px);
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .imgProf img{
+        width: 100%;
+    }
+    .imgInv{
+        display: none;
+    }
+    .floatLogo{
+    display: none;
+    }
+   .elemtFrt li:hover{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #135a!important;
+    }
+    footer{
+        display: block;
+        background: linear-gradient(to right,#141E30, #243B55)
+    }
+    footer img{
+        width: 100%;
+        height:25pc;
+        overflow: hidden;
+    }
+    header{
+        position: fixed;
+    }
+}
+
+
+
+
+
+.blockft{
+    display: block;
+    left: 0;
 }
