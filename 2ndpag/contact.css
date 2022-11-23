@@ -118,6 +118,7 @@ nav .elemtFrt{
     justify-content: center;
    background-image: url(../fndprb/pngegg\ \(6\).png);
    background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .form-cnt main{
