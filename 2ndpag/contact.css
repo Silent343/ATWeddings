@@ -119,6 +119,10 @@ nav .elemtFrt{
    background-image: url(../fndprb/pngegg\ \(6\).png);
    background-repeat: no-repeat;
    background-size: cover;
+
+
+   position: relative;
+   z-index: 0;
 }
 
 .form-cnt main{
@@ -126,7 +130,8 @@ nav .elemtFrt{
     margin: 15px;
     width: 40%;
     padding: 30px;
-    border-radius: 30px;scroll-behavior: smooth;
+    border-radius: 30px;
+    scroll-behavior: smooth;
     overflow: auto;
 }
 main form{
@@ -209,9 +214,10 @@ textarea{
     width: 100%;
     height: 1%;
     margin: 4px;
-    overflow: hidden;
+   
 }
-.line div{
+.line span{
+    overflow: hidden;
     background-color: #3ff;
     height: 0.8%;
     width: 1%;
@@ -229,8 +235,9 @@ textarea{
 .imgCtndct{
     position: absolute;
     width: 100%;
-    height: calc(100% - 60px); 
+    height: 100%; 
     overflow: hidden;
+    z-index: -100;
 }
 .imgCtndct .dctBall{
     width: 20%;
