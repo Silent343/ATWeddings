@@ -19,7 +19,7 @@ body{
     display: none;
 }
 header{
-    position: fixed;
+    position: fixed!important;
     top: 0;
     height: 60px;
     width: 100%;
@@ -27,7 +27,6 @@ header{
     color: #faa;
     font-weight: bolder;
     z-index: 200;
-    position: relative;
 }
 .profilebox{
     position: relative;
@@ -68,13 +67,6 @@ nav .elemtFrt{
 
 
 
-.blockft{
-    display: block;
-    left: 0;
-}
-
-
-
 
 
 
@@ -84,6 +76,7 @@ nav .elemtFrt{
 .ftsCtn{
     width: 100%;
     display: flex;
+    margin-top: 60px;
     justify-content: center;
 }
 main{
@@ -250,6 +243,10 @@ main .bckTxtc{
 
 @media (max-width: 768px) {
 
+    .btns{
+        display: block;
+    }
+
     .elemtScnd{
         width: 100%;
         justify-content: end;
@@ -284,4 +281,15 @@ main .bckTxtc{
         grid-row: 100%!important;
         grid-template-columns: repeat(2, auto);
     }
+    .imgwc{
+        grid-column: 2 span;
+    }
+    
 }
+
+.blockft{
+    display: block;
+    left: 0;
+}
+
+

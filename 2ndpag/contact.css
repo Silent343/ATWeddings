@@ -67,44 +67,11 @@ nav .elemtFrt{
 
 
 
-@media (max-width: 768px) {
 
-    .elemtScnd{
-        width: 100%;
-        justify-content: end;
-        display: flex;
-    }
-    .elemtScnd li span{
-        font-size: 14px;
-    }
-    .menuToggle{
-        display: block;
-        font-size: 20px;
-    }
-    .elemtFrt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        margin: 0;
-        background: #334;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%!important;
-    
-        overflow-y: auto;
-        height: calc(100% - 60px);
-    
-        left: 100%;
-        transition: left 0.3s;
-    }
-}
-.blockft{
-    
-    display: block;
-    left: 0;
-}
+
+  
+
+
 
 
 
@@ -224,7 +191,14 @@ textarea{
 
 
 
+
+
+
+
+
+
 .loader {
+    margin-bottom: 5px;
     width: 100%;
     height: 0.3em;
     border-radius: 8px;
@@ -392,3 +366,49 @@ textarea{
 
 
 
+
+
+@media (max-width: 768px) {
+
+    .elemtScnd{
+        width: 100%;
+        justify-content: end;
+        display: flex;
+    }
+    .elemtScnd li span{
+        font-size: 14px;
+    }
+    .menuToggle{
+        display: block;
+        font-size: 20px;
+    }
+    .elemtFrt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        margin: 0;
+        background: #334;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%!important;
+    
+        overflow-y: auto;
+        height: calc(100% - 60px);
+    
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .form-cnt main{
+        width: 90%;
+    }
+    /* form{
+        padding-bottom: 20px;
+    } */
+}
+.blockft{
+    
+    display: block;
+    left: 0;
+}
