@@ -5,12 +5,12 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("blockft")
 }) 
 
+//////////////////////////contact
 
 
 
 
-
-
+/////////////////////////galery
 
 ScrollReveal().reveal()
 window.sr = ScrollReveal();

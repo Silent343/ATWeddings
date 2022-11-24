@@ -79,3 +79,12 @@ function nextSlide(){
    moveCarousel()
    
 }    
+
+
+
+function infor(){
+    iziToast.info({
+        title: 'Hello',
+        message: 'Welcome!',
+    });
+}
