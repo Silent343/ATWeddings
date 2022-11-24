@@ -116,9 +116,9 @@ nav .elemtFrt{
     height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
-   background-image: url(../fndprb/pngegg\ \(6\).png);
+   background-image: url(../fndprb/mountains_front.png);
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size:cover;
 
 
    position: relative;
@@ -163,6 +163,7 @@ form input{
 	border-right: 0;
 	border-top: 0;
     padding: 10px;
+    outline: none;
 }
 ::placeholder{
 	color: #0007;
@@ -170,6 +171,7 @@ form input{
 textarea{
 	background-color: rgba(101, 123, 222, 0.466);
 	padding: 5px;
+    outline: none;
 	border-radius: 2px;
     max-width: 100%;
 	border: 1px solid #000;
@@ -209,26 +211,111 @@ textarea{
     color: #faa;
     text-transform: uppercase;
 }
-.line{
-    background: #000;
-    width: 100%;
-    height: 1%;
-    margin: 4px;
-   
-}
-.line span{
-    overflow: hidden;
-    background-color: #3ff;
-    height: 0.8%;
-    width: 1%;
-    position: absolute;
-	animation: line 4s linear infinite;
-	animation-delay: calc(-1s * var(--i));
-	filter: blur(1px);
-}
+
 .ftenr{
     font-size: 17px;
 }
+
+
+
+
+
+.loader {
+    width: 100%;
+    height: 0.4em;
+    border-radius: 8px;
+    background-color: #47a7ff44;
+  }
+
+.loader div {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #47a7ff;
+    animation: width7435 1s linear infinite;
+    transition: all;
+}
+
+@keyframes width7435 {
+    from {
+        /*width: 0;*/
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+   
+  
+.flexBtn{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+  
+  button {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: #ffff;
+    padding: 0.3em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(5em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  
+
+
+
+
+
+
 
 
 
@@ -294,3 +381,7 @@ textarea{
         height: 100%;
     }
 }
+
+
+
+
